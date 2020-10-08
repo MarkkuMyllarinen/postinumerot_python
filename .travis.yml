@@ -5,5 +5,5 @@
     after_success:
       install: pip install coverage
       script: 
-      - coverage run -m pytest
-      - coverage report
+      - coverage run -m --source=. pytest
+      - coverage report -m
