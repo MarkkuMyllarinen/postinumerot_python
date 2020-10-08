@@ -1,9 +1,7 @@
   language: python
   script:
     - pytest
-
     after_success:
       install: pip install coverage
-      script: 
       - coverage run -m --source=. pytest
       - coverage report -m
